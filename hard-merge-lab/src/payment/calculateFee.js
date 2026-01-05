@@ -1,4 +1,5 @@
 export function calculateFee(amount) {
   // amount: number (KRW)
-  return Math.floor(amount * 0.03);
+  const fee = amount * 0.05;
+  return fee > 10000 ? 10000 : Math.floor(fee);
 }
